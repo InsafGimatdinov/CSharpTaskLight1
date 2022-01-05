@@ -10,6 +10,8 @@ double observeHight = Convert.ToDouble(System.Console.ReadLine());
 
 if (observeHight > 0)
 {
+    double meterObserver = Convert.ToDouble(System.Console.ReadLine());
+    double meterHorizon = Convert.ToDouble(System.Console.ReadLine());
     const double radiusEarth = 6350;
     double distanceHorizon = Math.Pow((Math.Pow((radiusEarth + observeHight), 2) - Math.Pow(radiusEarth, 2)), 0.5);
     System.Console.WriteLine($"Расстояние плоскости в метрах: высота наблюдателя {meterObserver} метры и\nПлоскость видимости {meterHorizon} в метрах. ");
